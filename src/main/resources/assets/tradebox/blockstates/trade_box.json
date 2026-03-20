@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "tradebox:block/trade_box" },
+        "facing=south": { "model": "tradebox:block/trade_box", "y": 180 },
+        "facing=west":  { "model": "tradebox:block/trade_box", "y": 270 },
+        "facing=east":  { "model": "tradebox:block/trade_box", "y": 90  }
+    }
+}

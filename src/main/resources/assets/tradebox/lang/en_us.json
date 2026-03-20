@@ -1,0 +1,11 @@
+{
+    "block.tradebox.trade_box": "Trade Box",
+    "container.tradebox.trade_box": "Trade Box",
+    "gui.tradebox.purchase": "Purchase",
+    "gui.tradebox.cost": "Cost:",
+    "gui.tradebox.select_enchantment": "Select an enchantment",
+    "gui.tradebox.can_afford": "✓ You can afford this",
+    "gui.tradebox.cannot_afford": "✗ Insufficient items",
+    "item.tradebox.trade_box": "Trade Box",
+    "itemGroup.tradebox": "Trade Box"
+}

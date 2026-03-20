@@ -1,0 +1,86 @@
+{
+    "Enchantments": [
+        {
+            "enchant_id": "minecraft:mending",
+            "level": 1,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 12 },
+                { "item": "minecraft:emerald", "quantity": 64 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:unbreaking",
+            "level": 1,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 6 },
+                { "item": "minecraft:emerald", "quantity": 16 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:unbreaking",
+            "level": 2,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 12 },
+                { "item": "minecraft:emerald", "quantity": 32 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:unbreaking",
+            "level": 3,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 18 },
+                { "item": "minecraft:emerald", "quantity": 48 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:power",
+            "level": 5,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 10 },
+                { "item": "minecraft:emerald", "quantity": 32 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:sharpness",
+            "level": 5,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 10 },
+                { "item": "minecraft:emerald", "quantity": 32 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:protection",
+            "level": 4,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 8 },
+                { "item": "minecraft:emerald", "quantity": 24 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:efficiency",
+            "level": 5,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 8 },
+                { "item": "minecraft:emerald", "quantity": 20 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:fortune",
+            "level": 3,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 16 },
+                { "item": "minecraft:emerald", "quantity": 48 },
+                { "item": "minecraft:diamond", "quantity": 4 }
+            ]
+        },
+        {
+            "enchant_id": "minecraft:silk_touch",
+            "level": 1,
+            "cost": [
+                { "item": "minecraft:gold_ingot", "quantity": 16 },
+                { "item": "minecraft:emerald", "quantity": 48 },
+                { "item": "minecraft:diamond", "quantity": 4 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SLS",
+        "LXL",
+        "SLS"
+    ],
+    "key": {
+        "S": { "item": "minecraft:stick" },
+        "L": { "item": "minecraft:leather" },
+        "X": { "item": "minecraft:lectern" }
+    },
+    "result": {
+        "id": "tradebox:trade_box",
+        "count": 1
+    }
+}
