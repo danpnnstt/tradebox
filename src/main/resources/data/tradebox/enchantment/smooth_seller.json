@@ -1,0 +1,22 @@
+{
+    "description": {
+        "translate": "enchantment.tradebox.smooth_seller"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 15,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 10
+    },
+    "max_cost": {
+        "base": 51,
+        "per_level_above_first": 10
+    },
+    "anvil_cost": 8,
+    "slots": [
+        "armor"
+    ],
+    "effects": {}
+}

@@ -20,4 +20,9 @@ public class ModItems {
             "potion_trade_block",
             () -> new BlockItem(ModBlocks.POTION_TRADE_BLOCK.get(), new Item.Properties())
     );
+
+    public static final DeferredItem<BlockItem> SELLER_BLOCK = ITEMS.register(
+            "seller_block",
+            () -> new BlockItem(ModBlocks.SELLER_BLOCK.get(), new Item.Properties())
+    );
 }

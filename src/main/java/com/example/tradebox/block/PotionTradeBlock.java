@@ -44,7 +44,8 @@ public class PotionTradeBlock extends BaseEntityBlock {
 
         BlockEntity be = level.getBlockEntity(pos);
         if (be instanceof PotionTradeBlockEntity entity) {
-            var potions = PotionShopConfig.getInstance().getPotions();
+            var potions = PotionShopConfig.getInstance().getPotions()
+                    .stream().filter(com.example.tradebox.config.PotionEntry::isSellable).toList();
             var bottles = PotionShopConfig.getInstance().getGlassBottles();
 
             player.openMenu(entity, buf -> {

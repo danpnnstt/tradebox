@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EGE",
+        "GAG",
+        "EGE"
+    ],
+    "key": {
+        "E": { "item": "minecraft:emerald" },
+        "G": { "item": "minecraft:gold_ingot" },
+        "A": { "item": "minecraft:anvil" }
+    },
+    "result": {
+        "id": "tradebox:seller_block",
+        "count": 1
+    }
+}

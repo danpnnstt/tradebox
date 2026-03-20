@@ -24,4 +24,10 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(PotionTradeBlockEntity::new, ModBlocks.POTION_TRADE_BLOCK.get())
                             .build(null)
             );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<com.example.tradebox.block.SellerBlockEntity>> SELLER_BLOCK =
+            BLOCK_ENTITIES.register("seller_block", () ->
+                    BlockEntityType.Builder.of(com.example.tradebox.block.SellerBlockEntity::new, ModBlocks.SELLER_BLOCK.get())
+                            .build(null)
+            );
 }

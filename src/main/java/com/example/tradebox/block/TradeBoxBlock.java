@@ -78,7 +78,8 @@ public class TradeBoxBlock extends BaseEntityBlock {
         }
         BlockEntity be = level.getBlockEntity(pos);
         if (be instanceof TradeBoxBlockEntity tradeBox) {
-            var enchantments = com.example.tradebox.config.EnchantmentShopConfig.getInstance().getEnchantments();
+            var enchantments = com.example.tradebox.config.EnchantmentShopConfig.getInstance().getEnchantments()
+                    .stream().filter(com.example.tradebox.config.EnchantmentEntry::isSellable).toList();
             player.openMenu(tradeBox, buf -> {
                 buf.writeBlockPos(pos);
                 buf.writeVarInt(enchantments.size());

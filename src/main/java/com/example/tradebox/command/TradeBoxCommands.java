@@ -2,6 +2,7 @@ package com.example.tradebox.command;
 
 import com.example.tradebox.config.EnchantmentShopConfig;
 import com.example.tradebox.config.PotionShopConfig;
+import com.example.tradebox.config.TradeBoxConfig;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -28,6 +29,7 @@ public class TradeBoxCommands {
                     .executes(ctx -> {
                         EnchantmentShopConfig.load();
                         PotionShopConfig.load();
+                        TradeBoxConfig.load();
                         int enchants = EnchantmentShopConfig.getInstance().getEnchantments().size();
                         int potions  = PotionShopConfig.getInstance().getPotions().size();
                         ctx.getSource().sendSuccess(

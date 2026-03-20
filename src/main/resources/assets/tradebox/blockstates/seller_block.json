@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "tradebox:block/seller_block" }
+    }
+}

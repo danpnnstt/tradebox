@@ -1,14 +1,24 @@
 {
     "block.tradebox.trade_box": "Trade Box",
     "block.tradebox.potion_trade_block": "Potion Trade Block",
+    "block.tradebox.seller_block": "Seller Block",
     "container.tradebox.trade_box": "Trade Box",
     "container.tradebox.potion_trade_block": "Potion Trade",
+    "container.tradebox.seller_block": "Sell Items",
     "gui.tradebox.purchase": "Purchase",
     "gui.tradebox.cost": "Cost:",
+    "gui.tradebox.sell": "Sell",
+    "gui.tradebox.refund_pct": "Refund: %s%%",
+    "gui.tradebox.have_item": "You have this item",
+    "gui.tradebox.no_item": "Not in inventory",
+    "gui.tradebox.you_receive": "You'll receive:",
+    "gui.tradebox.select_item": "Select an item",
     "gui.tradebox.select_enchantment": "Select an enchantment",
     "gui.tradebox.select_potion": "Select a potion",
     "gui.tradebox.can_afford": "\u2713 You can afford this",
     "gui.tradebox.cannot_afford": "\u2717 Insufficient items",
     "item.tradebox.trade_box": "Trade Box",
-    "item.tradebox.potion_trade_block": "Potion Trade Block"
+    "item.tradebox.potion_trade_block": "Potion Trade Block",
+    "item.tradebox.seller_block": "Seller Block",
+    "enchantment.tradebox.smooth_seller": "Smooth Seller"
 }

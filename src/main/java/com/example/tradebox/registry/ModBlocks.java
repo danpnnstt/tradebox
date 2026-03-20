@@ -35,4 +35,15 @@ public class ModBlocks {
                             .noOcclusion()
             )
     );
+
+    public static final DeferredBlock<com.example.tradebox.block.SellerBlock> SELLER_BLOCK = BLOCKS.register(
+            "seller_block",
+            () -> new com.example.tradebox.block.SellerBlock(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.STONE)
+                            .strength(3.0f)
+                            .sound(SoundType.STONE)
+                            .noOcclusion()
+            )
+    );
 }
