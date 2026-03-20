@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "tradebox:block/potion_trade_block" }
+    }
+}

@@ -15,4 +15,9 @@ public class ModItems {
             "trade_box",
             () -> new BlockItem(ModBlocks.TRADE_BOX.get(), new Item.Properties())
     );
+
+    public static final DeferredItem<BlockItem> POTION_TRADE_BLOCK = ITEMS.register(
+            "potion_trade_block",
+            () -> new BlockItem(ModBlocks.POTION_TRADE_BLOCK.get(), new Item.Properties())
+    );
 }

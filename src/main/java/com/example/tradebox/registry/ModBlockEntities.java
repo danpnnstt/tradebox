@@ -1,6 +1,7 @@
 package com.example.tradebox.registry;
 
 import com.example.tradebox.TradeBoxMod;
+import com.example.tradebox.block.PotionTradeBlockEntity;
 import com.example.tradebox.block.TradeBoxBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -15,6 +16,12 @@ public class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<TradeBoxBlockEntity>> TRADE_BOX =
             BLOCK_ENTITIES.register("trade_box", () ->
                     BlockEntityType.Builder.of(TradeBoxBlockEntity::new, ModBlocks.TRADE_BOX.get())
+                            .build(null)
+            );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PotionTradeBlockEntity>> POTION_TRADE =
+            BLOCK_ENTITIES.register("potion_trade_block", () ->
+                    BlockEntityType.Builder.of(PotionTradeBlockEntity::new, ModBlocks.POTION_TRADE_BLOCK.get())
                             .build(null)
             );
 }

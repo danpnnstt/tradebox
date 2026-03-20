@@ -1,11 +1,14 @@
 {
     "block.tradebox.trade_box": "Trade Box",
+    "block.tradebox.potion_trade_block": "Potion Trade Block",
     "container.tradebox.trade_box": "Trade Box",
+    "container.tradebox.potion_trade_block": "Potion Trade",
     "gui.tradebox.purchase": "Purchase",
     "gui.tradebox.cost": "Cost:",
     "gui.tradebox.select_enchantment": "Select an enchantment",
-    "gui.tradebox.can_afford": "✓ You can afford this",
-    "gui.tradebox.cannot_afford": "✗ Insufficient items",
+    "gui.tradebox.select_potion": "Select a potion",
+    "gui.tradebox.can_afford": "\u2713 You can afford this",
+    "gui.tradebox.cannot_afford": "\u2717 Insufficient items",
     "item.tradebox.trade_box": "Trade Box",
-    "itemGroup.tradebox": "Trade Box"
+    "item.tradebox.potion_trade_block": "Potion Trade Block"
 }

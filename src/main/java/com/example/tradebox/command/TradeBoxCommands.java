@@ -1,6 +1,7 @@
 package com.example.tradebox.command;
 
 import com.example.tradebox.config.EnchantmentShopConfig;
+import com.example.tradebox.config.PotionShopConfig;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -26,12 +27,15 @@ public class TradeBoxCommands {
                 .then(Commands.literal("reload")
                     .executes(ctx -> {
                         EnchantmentShopConfig.load();
-                        int count = EnchantmentShopConfig.getInstance().getEnchantments().size();
+                        PotionShopConfig.load();
+                        int enchants = EnchantmentShopConfig.getInstance().getEnchantments().size();
+                        int potions  = PotionShopConfig.getInstance().getPotions().size();
                         ctx.getSource().sendSuccess(
-                            () -> Component.literal("[TradeBox] Config reloaded. " + count + " enchantment(s) loaded."),
+                            () -> Component.literal("[TradeBox] Config reloaded. "
+                                + enchants + " enchantment(s), " + potions + " potion(s) loaded."),
                             true
                         );
-                        return count;
+                        return enchants + potions;
                     })
                 )
                 .then(Commands.literal("export")

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IGI",
+        "GBG",
+        "IGI"
+    ],
+    "key": {
+        "I": { "item": "minecraft:iron_ingot" },
+        "G": { "item": "minecraft:glass" },
+        "B": { "item": "minecraft:brewing_stand" }
+    },
+    "result": {
+        "id": "tradebox:potion_trade_block",
+        "count": 1
+    }
+}

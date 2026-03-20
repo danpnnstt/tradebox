@@ -1,6 +1,7 @@
 package com.example.tradebox.client;
 
 import com.example.tradebox.TradeBoxMod;
+import com.example.tradebox.client.screen.PotionTradeScreen;
 import com.example.tradebox.client.screen.TradeBoxScreen;
 import com.example.tradebox.registry.ModMenuTypes;
 import net.neoforged.api.distmarker.Dist;
@@ -13,6 +14,7 @@ public class TradeBoxClientSetup {
 
     @SubscribeEvent
     public static void registerScreens(RegisterMenuScreensEvent event) {
-        event.register(ModMenuTypes.TRADE_BOX_MENU.get(), TradeBoxScreen::new);
+        event.register(ModMenuTypes.TRADE_BOX_MENU.get(),    TradeBoxScreen::new);
+        event.register(ModMenuTypes.POTION_TRADE_MENU.get(), PotionTradeScreen::new);
     }
 }

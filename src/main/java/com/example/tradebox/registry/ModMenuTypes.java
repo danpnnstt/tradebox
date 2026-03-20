@@ -1,6 +1,7 @@
 package com.example.tradebox.registry;
 
 import com.example.tradebox.TradeBoxMod;
+import com.example.tradebox.menu.PotionTradeMenu;
 import com.example.tradebox.menu.TradeBoxMenu;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.inventory.MenuType;
@@ -16,5 +17,10 @@ public class ModMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<TradeBoxMenu>> TRADE_BOX_MENU =
             MENUS.register("trade_box", () ->
                     IMenuTypeExtension.create(TradeBoxMenu::new)
+            );
+
+    public static final DeferredHolder<MenuType<?>, MenuType<PotionTradeMenu>> POTION_TRADE_MENU =
+            MENUS.register("potion_trade_block", () ->
+                    IMenuTypeExtension.create(PotionTradeMenu::new)
             );
 }
