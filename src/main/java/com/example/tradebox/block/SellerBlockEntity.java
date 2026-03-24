@@ -1,5 +1,9 @@
 package com.example.tradebox.block;
 
+import com.example.tradebox.config.EnchantmentShopConfig;
+import com.example.tradebox.config.PotionShopConfig;
+import com.example.tradebox.config.EnchantmentEntry;
+import com.example.tradebox.config.PotionEntry;
 import com.example.tradebox.menu.SellerMenu;
 import com.example.tradebox.registry.ModBlockEntities;
 import com.example.tradebox.registry.ModMenuTypes;
@@ -26,7 +30,11 @@ public class SellerBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public @Nullable AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player) {
-        // Menu is created with extra data via SellerBlock.useWithoutItem — this path is not used
-        return null;
+        int refundPct = SellerBlock.calculateRefundPercentage(player);
+        var enchants = EnchantmentShopConfig.getInstance().getEnchantments()
+                .stream().filter(EnchantmentEntry::isRefundable).toList();
+        var potions = PotionShopConfig.getInstance().getPotions()
+                .stream().filter(PotionEntry::isRefundable).toList();
+        return new SellerMenu(containerId, playerInventory, worldPosition, refundPct, enchants, potions);
     }
 }

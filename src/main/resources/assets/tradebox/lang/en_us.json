@@ -20,5 +20,6 @@
     "item.tradebox.trade_box": "Trade Box",
     "item.tradebox.potion_trade_block": "Potion Trade Block",
     "item.tradebox.seller_block": "Seller Block",
-    "enchantment.tradebox.smooth_seller": "Smooth Seller"
+    "enchantment.tradebox.smooth_seller": "Smooth Seller",
+    "itemGroup.tradebox": "Trade Box"
 }

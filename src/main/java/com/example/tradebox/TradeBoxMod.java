@@ -10,6 +10,7 @@ import com.example.tradebox.network.SellEnchantmentPacket;
 import com.example.tradebox.network.SellPotionPacket;
 import com.example.tradebox.registry.ModBlockEntities;
 import com.example.tradebox.registry.ModBlocks;
+import com.example.tradebox.registry.ModCreativeTabs;
 import com.example.tradebox.registry.ModItems;
 import com.example.tradebox.registry.ModMenuTypes;
 import net.neoforged.bus.api.IEventBus;
@@ -30,6 +31,7 @@ public class TradeBoxMod {
         ModItems.ITEMS.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         ModMenuTypes.MENUS.register(modEventBus);
+        ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerPayloads);

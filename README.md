@@ -71,7 +71,35 @@ Any item in the game registry can be used as currency — not just emeralds.
 
 ### Crafting Recipes
 
-All three blocks have crafting recipes. Check your recipe book in-game or use a mod like Just Enough Items (JEI) to view them.
+#### Trade Box
+```
+S L S
+L X L
+S L S
+```
+- **S** = Stick
+- **L** = Leather
+- **X** = Lectern
+
+#### Potion Trade Block
+```
+I G I
+G B G
+I G I
+```
+- **I** = Iron Ingot
+- **G** = Glass
+- **B** = Brewing Stand
+
+#### Seller Block
+```
+E G E
+G A G
+E G E
+```
+- **E** = Emerald
+- **G** = Gold Ingot
+- **A** = Anvil
 
 ---
 
